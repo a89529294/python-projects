@@ -4,7 +4,7 @@ print('|       |')
 print('|       |')
 print('---------')
 
-s = '         '
+s = ' ' * 9
 flag = True
 currentPlayer = 'X'
 
@@ -43,7 +43,7 @@ while flag:
             currentPlayer = 'O' if currentPlayer == 'X' else 'X'
 
             lines = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6],
-             [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
+                     [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
             number_of_x_winning_lines = 0
             number_of_o_winning_lines = 0
             number_of_x = 0
@@ -79,6 +79,3 @@ while flag:
             elif number_of_empty_cells == 0:
                 print('Draw')
                 flag = False
-
-
-
